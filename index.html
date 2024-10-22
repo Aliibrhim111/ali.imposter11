@@ -1,0 +1,33 @@
+
+<html>
+  <head>
+    <title>Ali's Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Ali's Website</h1>
+    <a href="#contact">Contact</a>
+
+    <div id="contact" style="display:none;">
+      <p>WhatsApp: <a href="https://wa.me/01060134447" target="_blank">01060134447</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/aliiibrahimm_" target="_blank">@aliiibrahimm_</a></p>
+      <p>Email: <a href="mailto:lya114812@gmail.com">lya114812@gmail.com</a></p>
+      <p>Phone: 01060134447</p>
+    </div>
+
+    <button onclick="playSound()">Click Me!</button>
+
+    <script>
+      function playSound() {
+        var audio = new Audio('sound.mp3'); // تأكد إنك عندك ملف الصوت على الرابط ده
+        audio.play();
+      }
+
+      document.querySelector('a[href="#contact"]').addEventListener('click', function() {
+        document.getElementById('contact').style.display = 'block';
+      });
+    </script>
+  </body>
+</html>
+
+
